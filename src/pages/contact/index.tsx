@@ -6,14 +6,14 @@ const Contact = () => {
     return (
         <div>
             {/* contact */}
-            <div className='bg-zinc-900 w-full h-96 flex justify-center	items-center	'>
+            <div className='bg-zinc-900 w-full h-full py-24'>
                 <div className='my-auto'>
                     <h1 className='text-7xl font-bold text-white text-center'>CONTACT</h1>
                     <h1 className='text-3xl font-bold text-white text-center mt-4'>IF YOU HAVE PRE-SALE QUESTIONS PLEASE CONTACT WITH US</h1>
                 </div>
             </div>
             {/* various contact icons*/}
-            <div className='bg-white w-full h-96 '>
+            <div className='bg-white w-full h-full '>
                 <div className='flex justify-between mx-8 my-24'>
                     {/* email icons */}
                     <div className='flex  justify-center'>
