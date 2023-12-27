@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <Link href="/login" className="btn">Login</Link>
         </div>
       </div>
     </nav>
