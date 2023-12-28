@@ -3,9 +3,11 @@ import Image from "next/image";
 import blog1 from '../../../public/blog1.jpg'
 import blog2 from '../../../public/blog2.jpg'
 import blog3 from '../../../public/blog3.jpg'
+import blog4 from '../../../public/blog4.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const index = () => {
     return (
         <div>
@@ -290,7 +292,7 @@ const index = () => {
                             </div>
                         </div>
                         {/* divider */}
-                        <div className="bg-gray-200 w-full h-2"> 
+                        <div className="bg-gray-200 w-full h-2">
                         </div>
                         <div className='grid grid-cols-3 gap-4 my-'>
                             <div className="col-span-1 ">
@@ -351,6 +353,79 @@ const index = () => {
                                 <button className="my-2 btn btn-active btn-warning btn-wide">Subscribe Now</button>
                             </div>
                         </div>
+                        {/* Recent freebies */}
+                        <div className='bg-white p-4 my-4'>
+                            <h1 className='text-lg font-bold text-center my-4'>RECENT FREEBIES</h1>
+                            <div className="flex justify-center">
+
+                                <Image className='w-3/5 h-3/5' src={blog1} alt='blog1'></Image>
+                            </div>
+                            <h1 className='text-lg  text-center my-4'>90+ Free Web App...</h1>
+                            <h1 className='text-sm text-center'>22.12.2015</h1>
+                            <h1 className='text-lg font-bold text-red-500   text-center my-2'>
+
+                                <Link href={""} className=''>Read More</Link >
+                            </h1>
+                            <div className="flex justify-center">
+
+                                <Image className='w-3/5 h-3/5' src={blog2} alt='blog1'></Image>
+                            </div>
+                            <h1 className='text-lg  text-center my-4'>90+ Free Web App...</h1>
+                            <h1 className='text-sm text-center'>22.12.2015</h1>
+                        </div>
+                        {/* check demo */}
+                        <div className='bg-white p-4 my-4'>
+                            <div className="flex justify-center m-2">
+
+                                <Image className='w-full h-full' src={blog4} alt='blog1'></Image>
+                            </div>
+                        </div>
+                        {/* Get in touch */}
+                        <div className='bg-white p-4 my-2'>
+                            <h1 className='font-bold text-center'>GET IN TOUCH</h1>
+                            <h1 className="my-4">
+                                <FontAwesomeIcon
+                                    className="text-orange-500 text-lg me-4"
+                                    icon={faArrowRight}
+                                />
+                                Coding (39)
+                            </h1>
+                            <h1 className="my-4">
+                                <FontAwesomeIcon
+                                    className="text-orange-500 text-lg me-4"
+                                    icon={faArrowRight}
+                                />
+                                Design & Development (21)
+                            </h1>
+                            <h1 className="my-4">
+                                <FontAwesomeIcon
+                                    className="text-orange-500 text-lg me-4"
+                                    icon={faArrowRight}
+                                />
+                                Branding (54)
+                            </h1>
+                            <h1 className="my-4">
+                                <FontAwesomeIcon
+                                    className="text-orange-500 text-lg me-4"
+                                    icon={faArrowRight}
+                                />
+                                Social marketing (127)
+                            </h1>
+                            <h1 className="my-4">
+                                <FontAwesomeIcon
+                                    className="text-orange-500 text-lg me-4"
+                                    icon={faArrowRight}
+                                />
+                                Life style (11)
+                            </h1>
+                            <h1 className="my-4">
+                                <FontAwesomeIcon
+                                    className="text-orange-500 text-lg me-4"
+                                    icon={faArrowRight}
+                                />
+                                Seo (14)
+                            </h1>
+                        </div>
 
                     </div>
                 </div>
@@ -360,4 +435,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default index; 
